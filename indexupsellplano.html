@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Upsell DocHelp Família Total 24h: cobertura familiar para até 4 pessoas, Clínico Geral 24h, psicoterapia incluída e especialidades no plano." />
+  <title>Plano DocHelp Família Total 24h | Upsell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#06142e;--bg2:#0b2352;--bg3:#15479b;--panel:rgba(8,19,45,.78);--panel-soft:rgba(255,255,255,.05);
+      --line:rgba(255,255,255,.12);--line-soft:rgba(255,255,255,.08);--text:#f5f9ff;--muted:#c7d8f5;
+      --green:#22c55e;--green-2:#4ade80;--shadow:0 24px 70px rgba(0,0,0,.35);--radius:28px;--max:920px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{
+      margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:var(--text);line-height:1.5;
+      background:
+        radial-gradient(900px 500px at 0% 0%, rgba(93,168,255,.17), transparent 60%),
+        radial-gradient(700px 420px at 100% 0%, rgba(77,146,255,.14), transparent 55%),
+        linear-gradient(180deg,var(--bg3) 0%, var(--bg2) 38%, var(--bg1) 100%);
+      min-height:100vh;
+    }
+    a{text-decoration:none;color:inherit} img{display:block;max-width:100%}
+    .wrap{max-width:var(--max);margin:0 auto;padding:12px 12px 24px}
+    .top{display:flex;justify-content:center;padding:6px 0 18px}
+    .logo{width:210px;max-width:62vw}
+    .hero,.panel,.ctaBox,.trustRow{
+      background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+      backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)
+    }
+    .hero{padding:32px 22px 28px;text-align:center}
+    .tag{
+      display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;
+      background:linear-gradient(135deg, rgba(93,168,255,.20), rgba(93,168,255,.10));border:1px solid rgba(141,194,255,.38);
+      color:#ffffff;font-weight:900;font-size:15px;letter-spacing:.2px;margin-bottom:18px;box-shadow:0 10px 28px rgba(0,0,0,.18)
+    }
+    h1{margin:0 auto 14px;max-width:14ch;font-size:clamp(34px,6vw,54px);line-height:1.02;letter-spacing:-1.4px}
+    .sub{margin:0 auto 12px;max-width:740px;font-size:18px;color:#e5efff}
+    .heroPrice,.priceBand{
+      display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;
+      padding:14px 18px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid var(--line);font-weight:900
+    }
+    .heroPrice{margin:22px auto 18px}
+    .heroPrice strong{font-size:30px;line-height:1;letter-spacing:-1px}
+    .heroPoints,.benefits,.sealGrid,.specGrid{display:grid;gap:12px;margin:20px auto 0}
+    .heroPoints{grid-template-columns:repeat(2,minmax(0,1fr));max-width:760px}
+    .benefits{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .specGrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .sealGrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .miniItem,.card,.seal,.spec{
+      padding:14px 15px;border:1px solid var(--line-soft);border-radius:18px;background:var(--panel-soft);text-align:center
+    }
+    .miniItem,.card strong,.spec strong,.seal strong{color:#eef5ff}
+    .card strong,.spec strong,.seal strong{display:block;font-size:15px;margin-bottom:6px}
+    .card span,.spec span,.seal span{color:var(--muted);font-size:14px}
+    .ctaWrap{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:22px}
+    .btn{
+      display:flex;align-items:center;justify-content:center;text-align:center;padding:18px 22px;border-radius:18px;
+      font-weight:900;transition:.2s ease;cursor:pointer;width:min(100%,460px)
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btnPrimary{
+      background:linear-gradient(135deg,var(--green),var(--green-2));color:#062411;box-shadow:0 16px 36px rgba(34,197,94,.24);
+      animation:pulseCTA 1.9s ease-in-out infinite;
+    }
+    .btnSecondary{background:rgba(255,255,255,.08);border:1px solid var(--line);color:#fff}
+    .note{font-size:12.5px;color:#d4e3ff;text-align:center;max-width:650px}
+    @keyframes pulseCTA{
+      0%,100%{transform:translateY(0) scale(1); box-shadow:0 16px 36px rgba(34,197,94,.24)}
+      50%{transform:translateY(-1px) scale(1.03); box-shadow:0 22px 48px rgba(34,197,94,.34)}
+    }
+    .panel,.ctaBox,.trustRow{padding:24px 18px;margin-top:18px;text-align:center}
+    .panel h2,.ctaBox h2{margin:0 0 10px;font-size:clamp(28px,4vw,40px);letter-spacing:-.8px}
+    .lead{margin:0 auto;color:var(--muted);max-width:740px}
+    .box{margin-top:18px;padding:18px;border-radius:22px;border:1px solid var(--line-soft);background:var(--panel-soft);text-align:left}
+    .box h3{margin:0 0 12px;font-size:22px;text-align:center}
+    .steps{display:grid;gap:12px;margin-top:12px}
+    .step{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line-soft)}
+    .step:last-child{border-bottom:none;padding-bottom:0}
+    .stepNum{
+      width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+      background:rgba(93,168,255,.14);border:1px solid rgba(141,194,255,.22);color:#fff;font-weight:900
+    }
+    .step strong{display:block;margin-bottom:4px}.step p{margin:0;color:#e0ecff}
+    .priceBand{margin-bottom:16px}
+    .sticky{position:sticky;bottom:8px;z-index:20;margin-top:14px}
+    .sticky a{
+      display:flex;justify-content:center;align-items:center;padding:16px 18px;border-radius:18px;background:linear-gradient(135deg,var(--green),var(--green-2));
+      color:#062411;font-weight:900;font-size:18px;letter-spacing:.2px;box-shadow:0 18px 40px rgba(34,197,94,.20);
+      animation:pulseCTA 1.9s ease-in-out infinite;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    }
+    .footer{padding:24px 0 8px;text-align:center;color:var(--muted);font-size:12.5px}
+    @media (max-width:640px){
+      .logo{width:190px;max-width:62vw}.hero,.panel,.ctaBox,.trustRow{padding:22px 16px}
+      h1{max-width:unset;font-size:34px;letter-spacing:-1.2px}.sub{font-size:16px}.heroPrice strong{font-size:28px}
+      .heroPoints,.benefits,.specGrid,.sealGrid{grid-template-columns:1fr}
+      .btn{width:100%;padding:17px 18px}.box{padding:16px}.box h3{font-size:20px}
+      .step{grid-template-columns:34px 1fr;gap:10px;padding:12px 0}.stepNum{width:34px;height:34px;font-size:14px}
+      .sticky a{padding:15px 16px;font-size:15px}
+    }
+  </style>
+  <script>
+    const LINK_PLANO = "https://pay.cakto.com.br/bo49gkx_821072";
+    function openPay(){ window.location.href = LINK_PLANO; }
+    function skipUpsell(){ window.history.back(); }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top"><img class="logo" src="LogoDocHelpBRANCO.png" alt="DocHelp Telemedicina"></div>
+
+    <section class="hero">
+      <div class="tag">Oferta especial disponível agora para ampliar sua cobertura</div>
+      <h1>Ative agora o Plano DocHelp Família Total 24h</h1>
+      <p class="sub">Você já garantiu sua consulta. Agora pode aproveitar esta condição para transformar esse atendimento pontual em <strong>cobertura familiar para o mês todo</strong>, com <strong>Clínico Geral 24h</strong>, especialistas <strong>por agendamento no aplicativo</strong> e muito mais praticidade sempre que precisar.</p>
+
+      <div class="heroPrice">
+        <span>Cobertura para até 4 pessoas</span>
+        <strong>R$100,00</strong>
+        <span>por mês</span>
+      </div>
+
+      <div class="ctaWrap">
+        <a class="btn btnPrimary" href="javascript:void(0)" onclick="openPay()">Quero ativar minha cobertura familiar</a>
+        <a class="btn btnSecondary" href="javascript:void(0)" onclick="skipUpsell()">Não, quero seguir sem o plano</a>
+        <div class="note">Uso imediato, sem carência, sem coparticipação nas consultas do plano e sem fidelidade.</div>
+      </div>
+
+      <div class="heroPoints">
+        <div class="miniItem">Até 4 pessoas no mesmo plano</div>
+        <div class="miniItem">Clínico Geral 24h</div>
+        <div class="miniItem">Especialistas por agendamento no aplicativo</div>
+        <div class="miniItem">Sem fidelidade</div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Mais do que uma consulta: cobertura para o mês inteiro</h2>
+      <p class="lead">Essa é a principal vantagem do Plano DocHelp Família Total 24h: em vez de resolver só uma necessidade de hoje, você deixa sua família coberta para usar sempre que precisar ao longo do mês.</p>
+      <div class="benefits">
+        <div class="card"><strong>Mais economia</strong><span>Em vez de pagar consulta pontual toda vez, você mantém uma cobertura ativa para até 4 pessoas.</span></div>
+        <div class="card"><strong>Mais cobertura</strong><span>Clínico Geral 24h e especialistas por agendamento no aplicativo em uma solução mais completa.</span></div>
+        <div class="card"><strong>Mais praticidade</strong><span>Atendimento online, sem sair de casa, com acesso pela plataforma DocHelp.</span></div>
+        <div class="card"><strong>Mais tranquilidade</strong><span>Você ativa agora e já pode usar sem carência, inclusive quando surgir nova necessidade.</span></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>O que você leva ao ativar o plano</h2>
+      <div class="benefits">
+        <div class="card"><strong>Cobertura para até 4 pessoas</strong><span>Ideal para proteger você e sua família no mesmo plano.</span></div>
+        <div class="card"><strong>Clínico Geral 24h</strong><span>Atendimento disponível todos os dias, sempre que precisar.</span></div>
+        <div class="card"><strong>Sem coparticipação</strong><span>Sem cobrança extra por consulta dentro do plano.</span></div>
+        <div class="card"><strong>Sem carência</strong><span>Contratou, já pode usar.</span></div>
+        <div class="card"><strong>Sem fidelidade</strong><span>Mais liberdade para contratar sem compromisso de permanência.</span></div>
+        <div class="card"><strong>2 sessões por mês de psicoterapia</strong><span>Psicoterapia incluída no plano para ampliar o cuidado com a família.</span></div>
+        <div class="card"><strong>Atendimento pela plataforma DocHelp</strong><span>Mais organização, praticidade e segurança no acesso.</span></div>
+        <div class="card"><strong>Mais cobertura no dia a dia</strong><span>Uma solução pensada para dar suporte à família ao longo do mês, sempre que precisar.</span></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Especialistas do plano por agendamento no aplicativo</h2>
+      <p class="lead">No plano, o <strong>Clínico Geral fica disponível 24h</strong>. Quando necessário, ele faz o encaminhamento para atendimento com os especialistas, que são agendados pelo aplicativo.</p>
+      <div class="specGrid">
+        <div class="spec"><strong>Cardiologia</strong><span>Acompanhamento especializado.</span></div>
+        <div class="spec"><strong>Dermatologia</strong><span>Cuidados com a pele.</span></div>
+        <div class="spec"><strong>Endocrinologia</strong><span>Questões hormonais e metabólicas.</span></div>
+        <div class="spec"><strong>Geriatria</strong><span>Cuidado voltado ao idoso.</span></div>
+        <div class="spec"><strong>Ginecologia</strong><span>Saúde da mulher.</span></div>
+        <div class="spec"><strong>Neurologia</strong><span>Suporte em questões neurológicas.</span></div>
+        <div class="spec"><strong>Pediatria</strong><span>Atenção à saúde infantil.</span></div>
+        <div class="spec"><strong>Psiquiatria</strong><span>Cuidado em saúde mental.</span></div>
+        <div class="spec"><strong>Ortopedia</strong><span>Ossos, músculos e articulações.</span></div>
+        <div class="spec"><strong>Traumatologia</strong><span>Avaliação de traumas e lesões.</span></div>
+        <div class="spec"><strong>Otorrinolaringologia</strong><span>Ouvido, nariz e garganta.</span></div>
+        <div class="spec"><strong>Urologia</strong><span>Saúde urinária e masculina.</span></div>
+      </div>
+      <p class="lead" style="margin-top:16px">O primeiro atendimento é com o Clínico Geral 24h. Quando houver necessidade, o próprio médico faz o encaminhamento para o especialista dentro do plano.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Como funciona após ativar</h2>
+      <div class="box">
+        <h3>Passo a passo simples</h3>
+        <div class="steps">
+          <div class="step"><div class="stepNum">1</div><div><strong>Ative o plano agora</strong><p>Conclua a contratação do Plano DocHelp Família Total 24h.</p></div></div>
+          <div class="step"><div class="stepNum">2</div><div><strong>Receba o acesso</strong><p>Você recebe as orientações para utilizar o plano pela plataforma DocHelp.</p></div></div>
+          <div class="step"><div class="stepNum">3</div><div><strong>Cadastre sua família</strong><p>Utilize a cobertura para até 4 pessoas dentro do plano.</p></div></div>
+          <div class="step"><div class="stepNum">4</div><div><strong>Use durante o mês sempre que precisar</strong><p>Com Clínico Geral 24h, especialistas por agendamento no aplicativo e 2 sessões mensais de psicoterapia incluídas.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ctaBox">
+      <div class="priceBand">Plano DocHelp Família Total 24h • R$100,00 por mês</div>
+      <h2>Aproveite agora e transforme sua consulta em cobertura completa para a família</h2>
+      <p>Você já entrou para se cuidar hoje. Agora pode sair desta etapa com uma solução mais inteligente para o mês inteiro, com mais cobertura, mais economia e mais tranquilidade para até 4 pessoas.</p>
+      <a class="btn btnPrimary" style="margin:0 auto" href="javascript:void(0)" onclick="openPay()">Ativar Plano DocHelp Família Total 24h</a>
+    </section>
+
+    <section class="trustRow">
+      <p class="trustTitle" style="font-size:28px;font-weight:900;letter-spacing:-.5px;margin-bottom:16px;color:#ffffff">Mais confiança para contratar</p>
+      <div class="sealGrid">
+        <div class="seal"><strong>Uso imediato</strong><span>Sem carência para começar a utilizar.</span></div>
+        <div class="seal"><strong>Sem coparticipação</strong><span>Consultas do plano sem cobrança extra por uso.</span></div>
+        <div class="seal"><strong>Cobertura familiar</strong><span>Até 4 pessoas no mesmo plano por R$100,00.</span></div>
+        <div class="seal"><strong>Sem fidelidade</strong><span>Mais liberdade para contratar o plano.</span></div>
+        <div class="seal"><strong>Plataforma DocHelp</strong><span>Atendimento e acesso organizados pela plataforma.</span></div>
+        <div class="seal"><strong>Psicoterapia incluída</strong><span>2 sessões por mês já inclusas no plano.</span></div>
+      </div>
+    </section>
+
+    <div class="sticky"><a href="javascript:void(0)" onclick="openPay()">Quero ativar meu plano familiar agora</a></div>
+    <div class="footer">DocHelp Telemedicina • Plano DocHelp Família Total 24h • Cobertura para até 4 pessoas</div>
+  </div>
+</body>
+</html>
